@@ -3,7 +3,7 @@ version: '3.9'
 services:
 
   httpd:
-    image: nginx-openresty-oidc
+    image: ghcr.io/thorsten-l/nginx-openresty-oidc:1.21
     container_name: nginx-openresty-oidc
     restart: always
     volumes:
