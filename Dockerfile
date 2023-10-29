@@ -1,5 +1,5 @@
 ARG OPENRESTY_VERSION
-FROM openresty/openresty:${OPENRESTY_VERSION}-focal
+FROM openresty/openresty:${OPENRESTY_VERSION}-jammy
 
 RUN apt update -y && apt upgrade -y && apt install -y procps \
     && luarocks install lua-resty-session \
